@@ -1,0 +1,26 @@
+/* App.js全体のレイアウト調整 */
+#root {
+  width: 100%;
+}
+
+/* FeatureとPriceを横並びにするコンテナ */
+.features-price-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #eef6fc;
+  /* 薄い青背景 */
+  border: 2px solid var(--ribbon-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .features-price-container {
+    grid-template-columns: 1fr;
+    /* スマホでは縦並び */
+    padding: 1rem;
+  }
+}

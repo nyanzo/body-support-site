@@ -1,0 +1,39 @@
+/* FeaturesとPrice共通のスタイル */
+.fp-section {
+    /* コンテナの中に入るので特別なスタイルは不要 */
+}
+
+.ribbon-title.small {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding-right: 1.5em;
+}
+
+/* Problemsと同じチェックリストスタイルを流用 */
+.check-list.orange-check li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.check-list.orange-check li::before {
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 0.8em;
+}
+
+/* 料金リスト */
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 2px solid var(--primary-blue);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.price-item .label {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0.2em 1em;
+    border-radius: 4px;
+}

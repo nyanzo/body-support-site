@@ -1,0 +1,66 @@
+:root {
+  --primary-blue: #003399;
+  /* 濃い青 */
+  --ribbon-blue: #1a5fba;
+  /* リボンの青 */
+  --accent-orange: #f58220;
+  /* チェックマークのオレンジ */
+  --line-green: #06c755;
+  /* LINEの緑 */
+  --text-color: #333;
+  --bg-light-gray: #f4f7fb;
+  --border-dashed: 2px dashed #c0c0c0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 共通のセクションスタイル */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* 共通のリボン風見出し */
+h2.ribbon-title {
+  position: relative;
+  background: var(--ribbon-blue);
+  color: white;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  /* リボンの端の形 */
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%);
+  padding-right: 2em;
+  /* 右側を少し広げる */
+}
+
+/* レスポンシブ対応：スマホ表示 */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h2.ribbon-title {
+    font-size: 1.3rem;
+    width: 100%;
+    /* スマホでは横幅いっぱいに */
+    clip-path: none;
+    /* 形を四角に戻す */
+    text-align: center;
+    padding-right: 1.5em;
+  }
+}

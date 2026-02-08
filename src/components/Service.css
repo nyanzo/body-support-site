@@ -1,0 +1,62 @@
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.icon-list .icon {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    /* アイコンの背景を青丸にする場合 */
+    /* background: var(--primary-blue); color: white; padding: 0.3em; border-radius: 50%; */
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(2deg);
+    /* 写真風に少し傾ける */
+}
+
+.note-banner {
+    background-color: #d0e2ff;
+    /* 薄い青 */
+    color: var(--primary-blue);
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-image {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .service-image img {
+        max-width: 80%;
+        transform: none;
+    }
+}

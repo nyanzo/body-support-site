@@ -1,0 +1,67 @@
+.contact-section {
+    background-color: #f9f9f9;
+    border-top: var(--border-dashed);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+
+.line-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--line-green);
+    color: white;
+    padding: 0.8rem 3rem;
+    border-radius: 50px;
+    /* 丸いボタン */
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(6, 199, 85, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.line-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(6, 199, 85, 0.5);
+}
+
+.line-icon {
+    background: white;
+    color: var(--line-green);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    margin-right: 0.8rem;
+    font-size: 1rem;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #eee;
+}
+
+.footer-notes {
+    font-size: 0.8rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .line-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
